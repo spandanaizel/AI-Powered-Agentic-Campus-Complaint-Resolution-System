@@ -1,0 +1,11 @@
+$ npm run test:mongodb   (guard check: must refuse FerretDB)
+> REQUIRE_GENUINE_MONGODB=1 vitest run tests/integration/server.test.js
+Error: REQUIRE_GENUINE_MONGODB=1 but the server is FerretDB v1.24.0. Point MONGODB_TEST_URI at a real MongoDB server.
+     31|       throw new Error(`REQUIRE_GENUINE_MONGODB=1 but the server is ${i…
+ Test Files  1 failed (1)
+      Tests  1 skipped (1)
+(expected: refusal above)
+
+$ npm run verify:anthropic   (no key available)
+SKIPPED: ANTHROPIC_API_KEY is not set. Live Anthropic calls are UNVERIFIED.
+exit=2

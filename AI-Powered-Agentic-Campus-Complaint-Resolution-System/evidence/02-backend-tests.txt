@@ -1,0 +1,45 @@
+$ npm test
+
+> campus-complaint-backend@1.0.0 test
+> vitest run
+
+
+ RUN  v3.2.7 /home/claude/proj/backend
+
+ ✓ tests/integration/resolutionAgent.test.js (12 tests) 3668ms
+   ✓ API access control and contract > students are forbidden; only the assignee or an admin may use the agent  1759ms
+ ✓ tests/integration/escalation.test.js (15 tests) 13443ms
+   ✓ repeated-issue escalation (> 5 distinct reporters) > exactly five distinct reporters does NOT escalate  2038ms
+   ✓ repeated-issue escalation (> 5 distinct reporters) > concurrent submissions: 12 distinct reporters at once escalate exactly once, none skipped  522ms
+   ✓ repeated-issue escalation (> 5 distinct reporters) > heavy concurrency: 60 simultaneous submissions across 3 issues, with duplicates, count and escalate exactly  7453ms
+   ✓ repeated-issue escalation (> 5 distinct reporters) > complaints reported after escalation are also Critical  312ms
+   ✓ repeated-issue escalation (> 5 distinct reporters) > escalation is returned by the API and visible to the student without exposing other reporters  766ms
+ ✓ tests/integration/agents.test.js (9 tests) 3052ms
+   ✓ agent API access control > students cannot call agents; staff only on assigned complaints; intake runs after create  1794ms
+ ✓ tests/integration/complaints.test.js (16 tests) 4199ms
+ ✓ tests/integration/auth.test.js (8 tests) 5691ms
+   ✓ authentication > registers a student, hashes the password, ignores no role from the client  411ms
+   ✓ authentication > uses one generic error for unknown email, wrong password and deactivated accounts  1435ms
+   ✓ authentication > requires a session for protected routes and the CSRF header for unsafe methods  365ms
+   ✓ authentication > logout invalidates the token even if the cookie is replayed  378ms
+   ✓ authentication > role comes from the database: a demoted admin loses access immediately  755ms
+   ✓ authentication > rate-limits repeated failed sign-ins  1778ms
+   ✓ authentication > admins cannot demote themselves or remove the last admin  377ms
+ ✓ tests/unit/agentParsing.test.js (9 tests) 39ms
+ ✓ tests/integration/verifyAnthropicScript.test.js (3 tests) 1659ms
+   ✓ verify-anthropic script (against a local mock API) > checks the model, makes one call per agent task, passes 7/7 and never prints the key  907ms
+   ✓ verify-anthropic script (against a local mock API) > stops with exit 1 when the model ID is not available  384ms
+   ✓ verify-anthropic script (against a local mock API) > exits 2 and says UNVERIFIED when no key is set  358ms
+ ✓ tests/unit/lifecycle.test.js (6 tests) 5ms
+ ✓ tests/unit/config.test.js (3 tests) 4ms
+stdout | tests/integration/server.test.js > database server identity > reports the server product and version
+[server-identity] product=FerretDB v1.24.0 reportedVersion=7.0.42 genuineMongoDB=false
+
+ ✓ tests/integration/server.test.js (1 test) 180ms
+
+ Test Files  10 passed (10)
+      Tests  82 passed (82)
+   Start at  06:57:20
+   Duration  41.23s (transform 337ms, setup 53ms, collect 6.24s, tests 31.94s, environment 2ms, prepare 1.11s)
+
+exit=0

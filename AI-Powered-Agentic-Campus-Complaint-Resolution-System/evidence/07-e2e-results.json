@@ -1,0 +1,478 @@
+{
+  "passed": 89,
+  "total": 89,
+  "results": [
+    {
+      "check": "setup: admin can sign in",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "a11y: no serious/critical axe violations on register",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "student: registration shows inline validation",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "student: registered and landed on student overview",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "student: empty state invites a first report",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "student: complaint form shows inline errors",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "a11y: no serious/critical axe violations on new complaint form (filled)",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "student: submission confirmation with next step",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "student: photo attached and rendered via authorised endpoint",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "student: no escalation yet with one reporter",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "escalation: repeat report by same student accepted",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "escalation: 5 distinct reporters (one repeating) does NOT escalate",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "escalation: student page shows no escalation at 5 reporters",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "escalation: 6th distinct reporter escalates (API)",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "escalation: student sees escalation banner after reload",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "escalation: student's complaint now Critical",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "escalation: list shows striped escalated rows for the student",
+      "pass": true,
+      "detail": "2 escalated of 2"
+    },
+    {
+      "check": "a11y: no serious/critical axe violations on student complaint list",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "permissions: another student gets 404 for Amy's complaint",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "permissions: student forbidden from GET /users",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "permissions: student forbidden from GET /issues",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "permissions: student forbidden from GET /reports/summary",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "permissions: student forbidden from GET /settings",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "permissions: student forbidden from GET /staff",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "permissions: student cannot override priority",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "permissions: student visiting /admin URL is redirected to student portal",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "auth: sign out returns to sign-in",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "staff: auto-assigned complaints appear in queue",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "a11y: no serious/critical axe violations on staff queue",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "staff: sees reporter count on escalated issue",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "staff: AI summary present and honestly labelled (no provider configured)",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "staff: draft is inserted for review, labelled as non-AI template",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "staff: troubleshooting suggestions shown and labelled rule-based",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "staff: evidence review with no note flags missing information",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "staff: evidence review is labelled not verified",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "staff: resolution note pre-filled from the review note",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "staff: moved complaint Assigned -> In Progress -> Resolved via UI (with resolution note)",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "a11y: no serious/critical axe violations on staff complaint detail",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "student: sees staff public reply",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "student: does NOT see internal note",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "student: sees the resolution note",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "student: confirmed fix and closed complaint",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "admin: overview figures render from live data",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "a11y: no serious/critical axe violations on admin overview",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "admin: issue shows 6 distinct reporters and Escalated",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "a11y: no serious/critical axe violations on admin repeated issues",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "admin: override requires a reason",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "admin: manual override applied via UI",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "escalation: 7th reporter's complaint is Critical",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "escalation: manually overridden complaint stays High after re-escalation",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "admin: admin all complaints page loads without error state",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "a11y: no serious/critical axe violations on admin all complaints",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "admin: admin staff coverage page loads without error state",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "a11y: no serious/critical axe violations on admin staff coverage",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "admin: admin categories page loads without error state",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "a11y: no serious/critical axe violations on admin categories",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "admin: admin users page loads without error state",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "a11y: no serious/critical axe violations on admin users",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "admin: admin reports page loads without error state",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "a11y: no serious/critical axe violations on admin reports",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "admin: admin settings page loads without error state",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "a11y: no serious/critical axe violations on admin settings",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "admin: settings states AI provider is not configured",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "layout: no horizontal scroll on admin overview @ 375px",
+      "pass": true,
+      "detail": "overflow 0px"
+    },
+    {
+      "check": "layout: no horizontal scroll on admin list @ 375px",
+      "pass": true,
+      "detail": "overflow 0px"
+    },
+    {
+      "check": "layout: no horizontal scroll on admin detail @ 375px",
+      "pass": true,
+      "detail": "overflow 0px"
+    },
+    {
+      "check": "layout: no horizontal scroll on issues @ 375px",
+      "pass": true,
+      "detail": "overflow 0px"
+    },
+    {
+      "check": "layout: no horizontal scroll on users @ 375px",
+      "pass": true,
+      "detail": "overflow 0px"
+    },
+    {
+      "check": "layout: no horizontal scroll on reports @ 375px",
+      "pass": true,
+      "detail": "overflow 0px"
+    },
+    {
+      "check": "mobile: sidebar hidden until menu opened",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "mobile: menu opens the navigation drawer",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "mobile: Escape closes the drawer",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "mobile: navigating closes the drawer",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "layout: no horizontal scroll on admin overview @ 768px",
+      "pass": true,
+      "detail": "overflow 0px"
+    },
+    {
+      "check": "layout: no horizontal scroll on admin list @ 768px",
+      "pass": true,
+      "detail": "overflow 0px"
+    },
+    {
+      "check": "layout: no horizontal scroll on admin detail @ 768px",
+      "pass": true,
+      "detail": "overflow 0px"
+    },
+    {
+      "check": "layout: no horizontal scroll on issues @ 768px",
+      "pass": true,
+      "detail": "overflow 0px"
+    },
+    {
+      "check": "layout: no horizontal scroll on users @ 768px",
+      "pass": true,
+      "detail": "overflow 0px"
+    },
+    {
+      "check": "layout: no horizontal scroll on reports @ 768px",
+      "pass": true,
+      "detail": "overflow 0px"
+    },
+    {
+      "check": "layout: no horizontal scroll on admin overview @ 1280px",
+      "pass": true,
+      "detail": "overflow 0px"
+    },
+    {
+      "check": "layout: no horizontal scroll on admin list @ 1280px",
+      "pass": true,
+      "detail": "overflow 0px"
+    },
+    {
+      "check": "layout: no horizontal scroll on admin detail @ 1280px",
+      "pass": true,
+      "detail": "overflow 0px"
+    },
+    {
+      "check": "layout: no horizontal scroll on issues @ 1280px",
+      "pass": true,
+      "detail": "overflow 0px"
+    },
+    {
+      "check": "layout: no horizontal scroll on users @ 1280px",
+      "pass": true,
+      "detail": "overflow 0px"
+    },
+    {
+      "check": "layout: no horizontal scroll on reports @ 1280px",
+      "pass": true,
+      "detail": "overflow 0px"
+    },
+    {
+      "check": "a11y: first Tab focuses the skip link",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "routing: unknown URL shows not-found page",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "auth: missing session redirects to sign-in",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "browser: no console errors (excluding expected 401/404 responses)",
+      "pass": true,
+      "detail": ""
+    }
+  ],
+  "axe": {
+    "register": [],
+    "new complaint form (filled)": [],
+    "student complaint list": [],
+    "staff queue": [],
+    "staff complaint detail": [],
+    "admin overview": [],
+    "admin repeated issues": [],
+    "admin all complaints": [],
+    "admin staff coverage": [],
+    "admin categories": [],
+    "admin users": [],
+    "admin reports": [],
+    "admin settings": []
+  },
+  "consoleErrors": [
+    "error: Failed to load resource: the server responded with a status of 401 (Unauthorized)",
+    "error: Failed to load resource: the server responded with a status of 401 (Unauthorized)",
+    "error: Failed to load resource: the server responded with a status of 401 (Unauthorized)",
+    "error: Failed to load resource: the server responded with a status of 401 (Unauthorized)",
+    "error: Failed to load resource: the server responded with a status of 401 (Unauthorized)",
+    "error: Failed to load resource: the server responded with a status of 401 (Unauthorized)",
+    "error: Failed to load resource: the server responded with a status of 401 (Unauthorized)",
+    "error: Failed to load resource: the server responded with a status of 401 (Unauthorized)",
+    "error: Failed to load resource: the server responded with a status of 401 (Unauthorized)",
+    "error: Failed to load resource: the server responded with a status of 401 (Unauthorized)"
+  ]
+}

@@ -1,0 +1,22 @@
+## Security review checks
+
+$ grep built frontend bundle for secrets / provider calls
+matches: none
+
+$ real .env files in tree
+none
+
+$ npm audit --omit=dev  (production dependencies)
+backend: none
+frontend: none
+
+$ npm audit  (including dev dependencies)
+backend: @vitest/mocker (moderate), tinypool (critical), vitest (critical)
+frontend: @vitest/mocker (moderate), tinypool (critical), vitest (critical)
+Accepted risk: the remaining findings are all in vitest 3 and its own dependencies (tinypool, @vitest/mocker),
+used only to run tests and never shipped. The fix is vitest 5.0.3 (a major upgrade, published 2026-09-30),
+deferred until it has been public for at least two weeks. See IMPLEMENTATION_REPORT.md.
+
+## Type checking
+Not applicable: JavaScript project (no TypeScript, no tsconfig, no type-check script). Inputs are validated at
+runtime with zod schemas instead.

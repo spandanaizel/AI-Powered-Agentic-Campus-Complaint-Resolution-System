@@ -1,0 +1,6 @@
+## Environment
+date: 2026-10-11T06:57:13Z
+node v22.22.2, npm 10.9.7
+database: FerretDB v (SQLite backend) - MongoDB wire protocol, NOT genuine MongoDB. Genuine MongoDB could not be obtained: fastdl.mongodb.org, repo.mongodb.org, downloads.mongodb.com and www.mongodb.com are all unreachable from this environment.
+AI provider: ANTHROPIC_API_KEY not present in the environment - no live Anthropic calls were possible. Agent tests use a stubbed provider; scripts/verify-anthropic.js was tested against a local mock HTTP API.
+model ID check: 'claude-haiku-5-5' is listed as a Claude API ID on https://platform.claude.com/docs/en/models/overview (fetched 2026-10-11).

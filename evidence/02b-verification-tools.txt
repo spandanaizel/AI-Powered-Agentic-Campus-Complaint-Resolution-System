@@ -1,0 +1,10 @@
+$ npm run test:mongodb   (= node scripts/test-mongodb.js; guard check: must refuse FerretDB)
+Error: REQUIRE_GENUINE_MONGODB=1 but the server is FerretDB v1.24.0. Point MONGODB_TEST_URI at a real MongoDB server.
+     31|       throw new Error(`REQUIRE_GENUINE_MONGODB=1 but the server is ${i…
+ Test Files  1 failed (1)
+exit=1
+(expected: refusal above, non-zero exit)
+
+$ npm run verify:gemini   (no key available; Google API host unreachable from this environment)
+SKIPPED: GEMINI_API_KEY is not set in backend/.env or the environment. Live Gemini calls are UNVERIFIED.
+exit=2

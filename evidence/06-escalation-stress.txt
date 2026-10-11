@@ -1,0 +1,12 @@
+$ npx vitest run tests/integration/escalation.test.js   (repeated 10 times; file contains 15 tests)
+run 1: Tests 15 passed (15)
+run 2: Tests 15 passed (15)
+run 3: Tests 15 passed (15)
+run 4: Tests 15 passed (15)
+run 5: Tests 15 passed (15)
+run 6: Tests 15 passed (15)
+run 7: Tests 15 passed (15)
+run 8: Tests 15 passed (15)
+run 9: Tests 15 passed (15)
+run 10: Tests 15 passed (15)
+RESULT: 10/10 runs fully passed

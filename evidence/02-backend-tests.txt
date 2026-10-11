@@ -1,0 +1,50 @@
+$ npm test
+
+> campus-complaint-backend@1.0.0 test
+> vitest run
+
+
+ RUN  v3.2.7 /home/claude/proj/backend
+
+ ✓ tests/integration/resolutionAgent.test.js (12 tests) 3363ms
+   ✓ API access control and contract > students are forbidden; only the assignee or an admin may use the agent  1607ms
+ ✓ tests/integration/escalation.test.js (15 tests) 11856ms
+   ✓ repeated-issue escalation (> 5 distinct reporters) > exactly five distinct reporters does NOT escalate  1993ms
+   ✓ repeated-issue escalation (> 5 distinct reporters) > concurrent submissions: 12 distinct reporters at once escalate exactly once, none skipped  985ms
+   ✓ repeated-issue escalation (> 5 distinct reporters) > heavy concurrency: 60 simultaneous submissions across 3 issues, with duplicates, count and escalate exactly  5455ms
+   ✓ repeated-issue escalation (> 5 distinct reporters) > complaints reported after escalation are also Critical  330ms
+   ✓ repeated-issue escalation (> 5 distinct reporters) > escalation is returned by the API and visible to the student without exposing other reporters  656ms
+ ✓ tests/integration/complaints.test.js (16 tests) 3808ms
+ ✓ tests/integration/agents.test.js (9 tests) 3051ms
+   ✓ agent API access control > students cannot call agents; staff only on assigned complaints; intake runs after create  1665ms
+ ✓ tests/integration/geminiAgents.test.js (9 tests) 4261ms
+   ✓ Gemini failures never break core workflows > per-minute rate limit (429): submission and auto-assignment still work  620ms
+   ✓ Gemini failures never break core workflows > daily quota exceeded (429): submission and auto-assignment still work  576ms
+   ✓ Gemini failures never break core workflows > invalid API key (401): submission and auto-assignment still work  570ms
+   ✓ Gemini failures never break core workflows > service unavailable (503): submission and auto-assignment still work  535ms
+   ✓ Gemini failures never break core workflows > the API key is never stored or returned: agent runs, complaints and settings are clean  449ms
+ ✓ tests/unit/geminiProvider.test.js (19 tests) 478ms
+ ✓ tests/integration/auth.test.js (8 tests) 5616ms
+   ✓ authentication > registers a student, hashes the password, ignores no role from the client  458ms
+   ✓ authentication > uses one generic error for unknown email, wrong password and deactivated accounts  1356ms
+   ✓ authentication > requires a session for protected routes and the CSRF header for unsafe methods  406ms
+   ✓ authentication > logout invalidates the token even if the cookie is replayed  403ms
+   ✓ authentication > role comes from the database: a demoted admin loses access immediately  803ms
+   ✓ authentication > rate-limits repeated failed sign-ins  1681ms
+   ✓ authentication > admins cannot demote themselves or remove the last admin  352ms
+ ✓ tests/integration/verifyGeminiScript.test.js (5 tests) 1802ms
+   ✓ verify:gemini script (against a local mock API) > --all-agents: one call per agent task, 8/8  850ms
+ ✓ tests/unit/lifecycle.test.js (6 tests) 15ms
+ ✓ tests/unit/agentParsing.test.js (5 tests) 14ms
+ ✓ tests/unit/config.test.js (3 tests) 4ms
+stdout | tests/integration/server.test.js > database server identity > reports the server product and version
+[server-identity] product=FerretDB v1.24.0 reportedVersion=7.0.42 genuineMongoDB=false
+
+ ✓ tests/integration/server.test.js (1 test) 128ms
+
+ Test Files  12 passed (12)
+      Tests  108 passed (108)
+   Start at  14:51:28
+   Duration  44.68s (transform 366ms, setup 57ms, collect 7.15s, tests 34.40s, environment 6ms, prepare 1.14s)
+
+exit=0

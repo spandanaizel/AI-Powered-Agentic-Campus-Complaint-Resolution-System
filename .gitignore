@@ -1,0 +1,7 @@
+node_modules/
+dist/
+.env
+*.log
+backend/uploads/
+e2e/results/
+coverage/

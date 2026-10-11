@@ -1,0 +1,20 @@
+$ npm test
+
+> campus-complaint-frontend@0.0.0 test
+> vitest run
+
+
+ RUN  v3.2.7 /home/claude/proj/frontend
+
+ ✓ src/test/components.test.jsx (11 tests) 1433ms
+   ✓ resolution assistance > the note written for the review pre-fills the required resolution note, and resolving needs it  718ms
+ ✓ src/test/routing.test.jsx (6 tests) 701ms
+ ✓ src/test/apiClient.test.js (5 tests) 8ms
+ ✓ src/test/validation.test.js (3 tests) 5ms
+
+ Test Files  4 passed (4)
+      Tests  25 passed (25)
+   Start at  14:52:40
+   Duration  6.31s (transform 424ms, setup 664ms, collect 888ms, tests 2.15s, environment 1.52s, prepare 398ms)
+
+exit=0

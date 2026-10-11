@@ -1,0 +1,43 @@
+$ npm run build
+
+> campus-complaint-frontend@0.0.0 build
+> vite build
+
+vite v7.3.7 building client environment for production...
+transforming...
+✓ 720 modules transformed.
+rendering chunks...
+computing gzip size...
+dist/index.html                                                 1.28 kB │ gzip:   0.59 kB
+dist/assets/public-sans-vietnamese-600-normal-P4BtCUdw.woff2    4.50 kB
+dist/assets/public-sans-vietnamese-700-normal-D97ShjGS.woff2    4.51 kB
+dist/assets/public-sans-vietnamese-400-normal-TxZB8OSn.woff2    4.52 kB
+dist/assets/public-sans-vietnamese-700-normal-Dq5VrXjD.woff     5.93 kB
+dist/assets/public-sans-vietnamese-400-normal-BO1meqcx.woff     5.94 kB
+dist/assets/public-sans-vietnamese-600-normal-CcnAzmUX.woff     5.94 kB
+dist/assets/public-sans-latin-ext-400-normal-mk90oQqJ.woff2    10.45 kB
+dist/assets/public-sans-latin-ext-600-normal-DchWdWJ_.woff2    10.52 kB
+dist/assets/public-sans-latin-ext-700-normal-CgolUQuG.woff2    10.53 kB
+dist/assets/public-sans-latin-ext-700-normal-jWHjnMgZ.woff     14.18 kB
+dist/assets/public-sans-latin-ext-400-normal-B02wwOdZ.woff     14.20 kB
+dist/assets/public-sans-latin-ext-600-normal-DfkbVac2.woff     14.26 kB
+dist/assets/public-sans-latin-600-normal-Fru-LXNs.woff2        14.59 kB
+dist/assets/public-sans-latin-700-normal-BqJmxWdE.woff2        14.60 kB
+dist/assets/public-sans-latin-400-normal-8Rpg0ruU.woff2        14.63 kB
+dist/assets/public-sans-latin-400-normal-SBbinRkI.woff         18.49 kB
+dist/assets/public-sans-latin-600-normal-BR59oU-I.woff         18.56 kB
+dist/assets/public-sans-latin-700-normal-Dm-oTPSL.woff         18.65 kB
+dist/assets/index-CsOg_y24.css                                 18.08 kB │ gzip:   4.50 kB
+dist/assets/Charts-BiQq85Op.js                                  1.66 kB │ gzip:   0.85 kB
+dist/assets/AdminDashboard-DryZD3uR.js                          2.71 kB │ gzip:   0.98 kB
+dist/assets/Settings-Ba6m9gBX.js                                2.74 kB │ gzip:   0.99 kB
+dist/assets/Categories-DsOgxwmw.js                              2.80 kB │ gzip:   1.38 kB
+dist/assets/AssignStaff-Dvxz3o_c.js                             3.26 kB │ gzip:   1.47 kB
+dist/assets/Issues-EjmYhZF0.js                                  3.56 kB │ gzip:   1.48 kB
+dist/assets/Reports-Ct3kxT4y.js                                 4.52 kB │ gzip:   1.74 kB
+dist/assets/Users-_XxEOmDx.js                                   5.67 kB │ gzip:   2.18 kB
+dist/assets/react-DxaJqP0F.js                                  50.96 kB │ gzip:  18.10 kB
+dist/assets/index-8_Zmbrpq.js                                 247.66 kB │ gzip:  75.62 kB
+dist/assets/charts-ZUEfDVGm.js                                346.41 kB │ gzip: 103.91 kB
+✓ built in 6.00s
+exit=0

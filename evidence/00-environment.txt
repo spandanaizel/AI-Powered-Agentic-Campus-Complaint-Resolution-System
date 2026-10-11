@@ -1,0 +1,7 @@
+## Environment
+date: 2026-10-11T14:51:09Z
+node v22.22.2, npm 10.9.7
+database: FerretDB v1.24.0 (SQLite backend) - MongoDB wire protocol, NOT genuine MongoDB (MongoDB download hosts unreachable from this environment).
+Gemini SDK: @google/genai 2.24.0 (official, googleapis/js-genai), Interactions API.
+Gemini live access: GEMINI_API_KEY not present; generativelanguage.googleapis.com unreachable from this environment (000). NO live Gemini calls were possible.
+Model/free-tier/rate-limit/SDK facts: checked on ai.google.dev pricing, rate-limits, models/gemini-3.5-flash-lite, get-started, text-generation and api-errors pages (2026-10-11).

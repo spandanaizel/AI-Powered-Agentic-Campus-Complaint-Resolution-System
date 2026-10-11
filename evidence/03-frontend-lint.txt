@@ -1,0 +1,6 @@
+$ npm run lint
+
+> campus-complaint-frontend@0.0.0 lint
+> eslint .
+
+exit=0

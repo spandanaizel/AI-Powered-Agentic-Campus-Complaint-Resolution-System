@@ -1,0 +1,26 @@
+## Security review checks
+
+$ grep built frontend bundle for Gemini key/endpoint/SDK, Google key pattern (AIza...), server secrets
+matches: none
+
+$ grep frontend source for GEMINI / genai / googleapis
+none
+
+$ search the whole tree (excluding node_modules) for a Google API key pattern (AIza + 30 chars)
+none
+
+$ real .env files in tree
+none
+
+$ npm audit --omit=dev  (production dependencies, includes @google/genai 2.24.0)
+backend: none
+frontend: none
+
+$ npm audit  (including dev dependencies)
+backend: @vitest/mocker (moderate), tinypool (critical), vitest (critical)
+frontend: @vitest/mocker (moderate), tinypool (critical), vitest (critical)
+Accepted risk: remaining findings are in vitest 3 and its own dependencies (tinypool, @vitest/mocker), used only
+to run tests and never shipped. Fix is vitest 5.0.3 (major upgrade), deferred under the two-week rule.
+
+## Type checking
+Not applicable: JavaScript project (no TypeScript, no tsconfig, no type-check script). Runtime validation uses zod.

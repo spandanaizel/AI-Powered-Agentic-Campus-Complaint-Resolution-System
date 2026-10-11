@@ -1,0 +1,94 @@
+$ e2e/run_stack.sh
+{"status":"ok","db":"connected"}
+PASS setup: admin can sign in
+PASS a11y: no serious/critical axe violations on register
+PASS student: registration shows inline validation
+PASS student: registered and landed on student overview
+PASS student: empty state invites a first report
+PASS student: complaint form shows inline errors
+PASS a11y: no serious/critical axe violations on new complaint form (filled)
+PASS student: submission confirmation with next step
+PASS student: photo attached and rendered via authorised endpoint
+PASS student: no escalation yet with one reporter
+PASS escalation: repeat report by same student accepted
+PASS escalation: 5 distinct reporters (one repeating) does NOT escalate
+PASS escalation: student page shows no escalation at 5 reporters
+PASS escalation: 6th distinct reporter escalates (API)
+PASS escalation: student sees escalation banner after reload
+PASS escalation: student's complaint now Critical
+PASS escalation: list shows striped escalated rows for the student  [2 escalated of 2]
+PASS a11y: no serious/critical axe violations on student complaint list
+PASS permissions: another student gets 404 for Amy's complaint
+PASS permissions: student forbidden from GET /users
+PASS permissions: student forbidden from GET /issues
+PASS permissions: student forbidden from GET /reports/summary
+PASS permissions: student forbidden from GET /settings
+PASS permissions: student forbidden from GET /staff
+PASS permissions: student cannot override priority
+PASS permissions: student visiting /admin URL is redirected to student portal
+PASS auth: sign out returns to sign-in
+PASS staff: auto-assigned complaints appear in queue
+PASS a11y: no serious/critical axe violations on staff queue
+PASS staff: sees reporter count on escalated issue
+PASS staff: AI summary present and honestly labelled (no provider configured)
+PASS staff: draft is inserted for review, labelled as non-AI template
+PASS staff: troubleshooting suggestions shown and labelled rule-based
+PASS staff: evidence review with no note flags missing information
+PASS staff: evidence review is labelled not verified
+PASS staff: resolution note pre-filled from the review note
+PASS staff: moved complaint Assigned -> In Progress -> Resolved via UI (with resolution note)
+PASS a11y: no serious/critical axe violations on staff complaint detail
+PASS student: sees staff public reply
+PASS student: does NOT see internal note
+PASS student: sees the resolution note
+PASS student: confirmed fix and closed complaint
+PASS admin: overview figures render from live data
+PASS a11y: no serious/critical axe violations on admin overview
+PASS admin: issue shows 6 distinct reporters and Escalated
+PASS a11y: no serious/critical axe violations on admin repeated issues
+PASS admin: override requires a reason
+PASS admin: manual override applied via UI
+PASS escalation: 7th reporter's complaint is Critical
+PASS escalation: manually overridden complaint stays High after re-escalation
+PASS admin: admin all complaints page loads without error state
+PASS a11y: no serious/critical axe violations on admin all complaints
+PASS admin: admin staff coverage page loads without error state
+PASS a11y: no serious/critical axe violations on admin staff coverage
+PASS admin: admin categories page loads without error state
+PASS a11y: no serious/critical axe violations on admin categories
+PASS admin: admin users page loads without error state
+PASS a11y: no serious/critical axe violations on admin users
+PASS admin: admin reports page loads without error state
+PASS a11y: no serious/critical axe violations on admin reports
+PASS admin: admin settings page loads without error state
+PASS a11y: no serious/critical axe violations on admin settings
+PASS admin: settings states Gemini is not configured (demo mode)
+PASS layout: no horizontal scroll on admin overview @ 375px  [overflow 0px]
+PASS layout: no horizontal scroll on admin list @ 375px  [overflow 0px]
+PASS layout: no horizontal scroll on admin detail @ 375px  [overflow 0px]
+PASS layout: no horizontal scroll on issues @ 375px  [overflow 0px]
+PASS layout: no horizontal scroll on users @ 375px  [overflow 0px]
+PASS layout: no horizontal scroll on reports @ 375px  [overflow 0px]
+PASS mobile: sidebar hidden until menu opened
+PASS mobile: menu opens the navigation drawer
+PASS mobile: Escape closes the drawer
+PASS mobile: navigating closes the drawer
+PASS layout: no horizontal scroll on admin overview @ 768px  [overflow 0px]
+PASS layout: no horizontal scroll on admin list @ 768px  [overflow 0px]
+PASS layout: no horizontal scroll on admin detail @ 768px  [overflow 0px]
+PASS layout: no horizontal scroll on issues @ 768px  [overflow 0px]
+PASS layout: no horizontal scroll on users @ 768px  [overflow 0px]
+PASS layout: no horizontal scroll on reports @ 768px  [overflow 0px]
+PASS layout: no horizontal scroll on admin overview @ 1280px  [overflow 0px]
+PASS layout: no horizontal scroll on admin list @ 1280px  [overflow 0px]
+PASS layout: no horizontal scroll on admin detail @ 1280px  [overflow 0px]
+PASS layout: no horizontal scroll on issues @ 1280px  [overflow 0px]
+PASS layout: no horizontal scroll on users @ 1280px  [overflow 0px]
+PASS layout: no horizontal scroll on reports @ 1280px  [overflow 0px]
+PASS a11y: first Tab focuses the skip link
+PASS routing: unknown URL shows not-found page
+PASS auth: missing session redirects to sign-in
+PASS browser: no console errors (excluding expected 401/404 responses)
+
+E2E: 89/89 checks passed
+exit=0
